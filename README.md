@@ -1,135 +1,148 @@
-![Homepage](https://github.com/NEET64/book-world/assets/67575976/f1c41565-9ad9-47d5-86b3-60e95f4f9215)
+Book World
 
-# Book World
-
-A full-featured book review and management application built with the MERN stack (`MongoDB`, `Express`, `React`, `Node.js`). Users can browse books, leave reviews with star ratings, and manage their favorites. Admins have extended capabilities for adding, editing, and deleting books, as well as managing user data and access.
+A full-featured book review and management application built with the MERN stack (MongoDB, Express, React, Node.js). Users can browse books, leave reviews with star ratings, and manage their favorites. Admins have extended capabilities for adding, editing, and deleting books, as well as managing user data and access.
 
 Live Link: https://book-world-beta.vercel.app/
 
-## Features
+Features
 
-- **User Authentication:**
+User Authentication:
 
-  - Secure user registration and login system.
-  - JWT for authorization.
-  - Bcrypt for password hashing.
+Secure user registration and login system.
 
-- **Book Listing with Reviews & Ratings:**
+JWT for authorization.
 
-  - Browse and search for books.
-  - Leave comprehensive reviews with star ratings.
-  - Read and gain insights from community reviews.
+Bcrypt for password hashing.
 
-- **User Profile Pages:**
+Book Listing with Reviews & Ratings:
 
-  - Personalized profiles to track activity.
-  - Manage and curate a list of favorite books.
+Browse and search for books.
 
-- **Advanced Feature:**
+Leave detailed reviews with star ratings.
 
-  - Unique nested commenting system using Depth-First Search (DFS) for efficient comment deletion within the review tree structure.
+Read community reviews for insights.
 
-- **User Roles & Permissions:**
-  - Differentiation between user and admin roles.
-  - Admin capabilities to add, update, and delete book listings.
-  - Manage user data and user roles (excluding a master admin).
+User Profile Pages:
 
-## Technologies Used
+Personalized profiles to track activity.
 
-- **Frontend:**
+Manage and curate a list of favorite books.
 
-  - React.js
-  - Recoil for State Management
-  - Tailwind CSS
-  - Shadcn UI library
-  - React Hook Form
-  - Tanstack Tables
-  - Lucide-React for icons
+Advanced Feature:
 
-- **Backend:**
+Nested commenting system using Depth-First Search (DFS) for efficient comment deletion within review threads.
 
-  - Node.js
-  - Express.js
-  - MongoDB
-  - Mongoose for MongoDB object modeling
-  - Multer for handling `multipart/form-data`
-  - CORS for Cross-Origin Resource Sharing
-  - JWT for token-based authentication
-  - Bcrypt for secure password storage
+User Roles & Permissions:
 
-- **Other Dependencies:**
-  - Axios
-  - Zod for schema validation
-  - React Router DOM for routing
-  - Cloudinary for image uploads (optional)
+Differentiation between user and admin roles.
 
-## Installation Guide
+Admin can add, update, and delete book listings.
 
-### Requirements
+Manage user data and roles (except master admin).
 
-- Node.js
-- MongoDB
+Technologies Used
 
-You can use use Mongo Atlas URL instead of local MongoDB
+Frontend:
 
-### Configure Environment Variables
+React.js
+
+Recoil for State Management
+
+Tailwind CSS
+
+Shadcn UI library
+
+React Hook Form
+
+Tanstack Tables
+
+Lucide-React for icons
+
+Backend:
+
+Node.js
+
+Express.js
+
+MongoDB
+
+Mongoose
+
+Multer for file uploads
+
+CORS
+
+JWT for authentication
+
+Bcrypt for password hashing
+
+Other Dependencies:
+
+Axios
+
+Zod for schema validation
+
+React Router DOM for routing
+
+Cloudinary for image uploads (optional)
+
+Installation Guide
+Requirements
+
+Node.js
+
+MongoDB (or use Mongo Atlas)
+
+Configure Environment Variables
 
 Rename .env.example to .env in both backend and frontend directories.
+Add your MONGO_URL, JWT_SECRET, CLOUD_NAME, CLOUD_API_KEY, CLOUD_API_SECRET, and PORT in the backend .env.
 
-Add your `MONGO_URL`, `JWT_SECRET`, `CLOUD_NAME`, `CLOUD_API_KEY`, `CLOUD_API_SECRET`, and `PORT` to the backend .env files.
+If you don’t use Cloudinary, replace cloudStorage with diskStorage in /backend/middleware/upload.js.
 
-If you don't have Cloudinary, you can replace `cloudStorage` with `diskStorage` in `/backend/middleware/upload.js`.
+Installation
+Clone the Repository
+git clone https://github.com/shivani123-abc/book-movie-wishlist-app.git
+cd book-movie-wishlist-app
 
-### Installation
-
-#### Clone the Repository
-
-```shell
-git clone https://github.com/NEET64/book-world.git
-cd book-world
-```
-
-#### Install packages
-
-```shell
+Install Packages
 cd backend
 npm install
-cd ..
-cd frontend
+cd ../frontend
 npm install
-```
 
-#### Start Frontend
-
-Make sure you are in `frontend` directory
-
-```shell
+Start Frontend
 npm run dev
-```
 
-#### Start Backend
-
-Make sure you are in `backend` directory
-
-```shell
+Start Backend
+cd ../backend
 node index.js
-```
 
-Now open `localhost:5173` on your browser
 
-## License
+Open http://localhost:5173 in your browser.
 
-[MIT LICENSE](LICENSE)
+License
 
-## Screenshots
+MIT LICENSE
 
-![Tableview](https://github.com/NEET64/book-world/assets/67575976/de404c8a-54a6-405f-b221-e6b62adc7fd9)
-![All Users](https://github.com/NEET64/book-world/assets/67575976/ee99ce2a-f59c-40cb-b003-4711a7754b04)
-![Favourites](https://github.com/NEET64/book-world/assets/67575976/ace1988d-f50d-429d-b33f-ce9a33db4649)
-![Details1](https://github.com/NEET64/book-world/assets/67575976/05a3a1dc-ac37-4602-82ef-46d3c23372fd)
-![Details2](https://github.com/NEET64/book-world/assets/67575976/496d598b-7895-426a-8403-deec71ff0901)
-![Details3](https://github.com/NEET64/book-world/assets/67575976/3bfc1aba-9b7c-49c4-81a5-a345ea19076a)
-![User](https://github.com/NEET64/book-world/assets/67575976/b254902a-4aae-4c1f-b05b-7946487a8935)
-![Add New](https://github.com/NEET64/book-world/assets/67575976/e158ccd6-fbed-45ee-849d-1851b922e93c)
-![Login](https://github.com/NEET64/book-world/assets/67575976/54af8184-ada3-434f-8b6e-8f7c864217ed)
-![Signup](https://github.com/NEET64/book-world/assets/67575976/c12a69fe-2e26-4b5f-9407-6b9bf6e1f636)
+Copyright (c) 2025 Shivani Yadav
+
+Screenshots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
