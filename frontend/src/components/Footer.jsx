@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,12 +12,6 @@ const Footer = () => {
         </span>
       </h1>
       <div className="sm:ml-auto flex items-center justify-center gap-2">
-        <Link to="https://www.linkedin.com/in/your-linkedin/" target="_blank">
-          <Button variant="outline" size="icon">
-            <FaLinkedinIn className="h-6 w-6" />
-            <span className="sr-only">LinkedIn</span>
-          </Button>
-        </Link>
         <Link to="https://github.com/shivani123-abc" target="_blank">
           <Button variant="outline" size="icon">
             <FaGithub className="h-6 w-6" />
